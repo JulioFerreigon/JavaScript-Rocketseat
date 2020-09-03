@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    <script>
+
+        experiencia = anos => {
+            switch(true) {
+                case anos >= 0 && anos < 1:
+                console.log("Iniciante");
+                break;
+                case anos >= 1 && anos < 3:
+                console.log("Intermediário");
+                break;
+                case anos >= 3 && anos <= 6:
+                console.log("Avançado");
+                break;
+                case anos >= 7:
+                console.log("Jedi Master");
+                default:
+                console.log();
+            };
+        };
+        
+        var anosEstudo = 7;    
+        experiencia(anosEstudo);
+    </script>
+</body>
+</html>
